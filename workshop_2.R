@@ -69,3 +69,25 @@ hdi3 <- Human_development_index %>%
   theme_classic() +
   coord_flip()
 
+#saving processed data
+file <-  "Processed_data/hdi2.txt"
+write.table(hdi2, 
+            file, 
+            quote = FALSE,
+            row.names = FALSE)
+file <-  "Processed_data/hdi_summary_low.txt"
+write.table(hdi_summary_low, 
+            file, 
+            quote = FALSE,
+            row.names = FALSE)
+file <-  "Processed_data/hdi_summary.txt"
+write.table(hdi_summary, 
+            file, 
+            quote = FALSE,
+            row.names = FALSE)
+file <-  "Processed_data/hdi_no_na.txt"
+write.table(hdi_no_na, 
+            file, 
+            quote = FALSE,
+            row.names = FALSE)
+
